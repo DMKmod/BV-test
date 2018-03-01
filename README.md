@@ -20,6 +20,7 @@ Following is a guide on how to run this code for environment replication:
 1. Create AWS account and admin IAM user for this account and save its AWS Access and Secret Access keys. 
 
 2. Prepare Terraform master node:
+  
   1. Install unzip: 
   sudo apt-get update
   sudo apt-get install unzip
@@ -28,18 +29,21 @@ Following is a guide on how to run this code for environment replication:
   unzip  terraform_0.11.3_linux_amd64.zip
   sudo mv terraform /usr/local/bin/
   terraform --version
-  3. Export previously saved AWS Access and Secret Access keys as an env variables:
+  
+3. Export previously saved AWS Access and Secret Access keys as an env variables:
     
     export AWS_ACCESS_KEY_ID=YOUR AWS ACCESS KEY HERE
     export AWS_SECRET_ACCESS_KEY_ID=YOUR AWS SECRET ACCESS KEY HERE
 
-3. Clone repository with  terraform files to create AWS environment, install nginx web servers and deploy our Hello World web app (index.html) from github.
-  git clone https://github.com/DMKmod/bv-test.git
+4. Clone repository with  terraform files to create AWS environment, install nginx web servers and deploy our Hello World web app (index.html) from github:
 
-4. Create AWS environment, install nginx web servers and deploy our Hello World web app.
-cd bv-test
-terraform plan
-verify plan output 
-terraform apply
+    git clone https://github.com/DMKmod/bv-test.git
+
+5. Create AWS environment, install nginx web servers and deploy our Hello World web app:
+
+    cd bv-test
+    terraform plan
+    verify plan output 
+    terraform apply
 
 5. After terraform executes apply there will be an output with address of the AWS ELB load balancer, please use it to test availability of the web application(please note, it might take several minutes before it becomes available).  
