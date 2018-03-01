@@ -29,6 +29,7 @@ Following is a guide on how to run this code for environment replication:
   sudo mv terraform /usr/local/bin/
   terraform --version
   3. Export previously saved AWS Access and Secret Access keys as an env variables:
+    
     export AWS_ACCESS_KEY_ID=YOUR AWS ACCESS KEY HERE
     export AWS_SECRET_ACCESS_KEY_ID=YOUR AWS SECRET ACCESS KEY HERE
 
