@@ -26,7 +26,7 @@ Following is a guide on how to run this code for environment replication:
     sudo apt-get update
     sudo apt-get install unzip
   
-  Install terraform and add it to the OS(Linux Ubuntu have been used for this 	tutorial) PATH and test installation:
+  Install terraform and add it to the OS(ubuntu-xenial-16.04-amd64-server-20180126 (ami-5055cd3f) have been used for this 	tutorial)    PATH and test installation:
   
     wget https ://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_linux_amd64.zip
   
