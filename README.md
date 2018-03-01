@@ -17,9 +17,9 @@ AWS Elastic Load Balancer(ELB) to distributed traffic across EC2 instances in ou
 
 Following is a guide on how to run this code for environment replication:
 
-1. Create AWS account and admin IAM user for this account and save its AWS Access and Secret Access keys. 
+1.Create AWS account and admin IAM user for this account and save its AWS Access and Secret Access keys. 
 
-2. Prepare Terraform master node:
+2.Prepare Terraform master node:
   
   Install unzip:
   
@@ -36,17 +36,17 @@ Following is a guide on how to run this code for environment replication:
   
     terraform --version
   
-3. Export previously saved AWS Access and Secret Access keys as an env variables:
+3.Export previously saved AWS Access and Secret Access keys as an env variables:
     
     export AWS_ACCESS_KEY_ID=YOUR AWS ACCESS KEY HERE
     
     export AWS_SECRET_ACCESS_KEY_ID=YOUR AWS SECRET ACCESS KEY HERE
 
-4. Clone repository with  terraform files to create AWS environment, install nginx web servers and deploy our Hello World web app (index.html) from github:
+4.Clone repository with  terraform files to create AWS environment, install nginx web servers and deploy our Hello World web app (index.html) from github:
 
     git clone https://github.com/DMKmod/bv-test.git
 
-5. Create AWS environment, install nginx web servers and deploy our Hello World web app:
+5.Create AWS environment, install nginx web servers and deploy our Hello World web app:
 
     cd bv-test
     
@@ -56,4 +56,4 @@ Following is a guide on how to run this code for environment replication:
     
     terraform apply
 
-5. After terraform executes apply there will be an output with address of the AWS ELB load balancer, please use it to test availability of the web application(please note, it might take several minutes before it becomes available).  
+6.After terraform executes apply there will be an output with address of the AWS ELB load balancer, please use it to test availability of the web application(please note, it might take several minutes before it becomes available).  
