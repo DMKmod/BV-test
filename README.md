@@ -21,10 +21,11 @@ Following is a guide on how to run this code for environment replication:
 
 2. Prepare Terraform master node:
   
-  1. Install unzip: 
+  Install unzip: 
   sudo apt-get update
   sudo apt-get install unzip
-  2. Install terraform and add it to the OS(Linux Ubuntu have been used for this 	tutorial) PATH and test installation:
+  
+  Install terraform and add it to the OS(Linux Ubuntu have been used for this 	tutorial) PATH and test installation:
   wget https ://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_linux_amd64.zip
   unzip  terraform_0.11.3_linux_amd64.zip
   sudo mv terraform /usr/local/bin/
